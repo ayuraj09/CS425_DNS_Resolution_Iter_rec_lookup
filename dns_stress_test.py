@@ -37,5 +37,5 @@ def run_stress_test(mode, num_requests=50):
     print("[STRESS TEST COMPLETE]")
 
 if __name__ == "__main__":
-    run_stress_test("iterative",15)  # Test iterative resolver with 50 queries
-    run_stress_test("recursive", 15)  # Test recursive resolver with 50 queries
+    run_stress_test("iterative",15)  # Test iterative resolver with 15 queries
+    run_stress_test("recursive", 15)  # Test recursive resolver with 15 queries
