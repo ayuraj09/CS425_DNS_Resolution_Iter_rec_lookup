@@ -2,6 +2,18 @@
 
 This implements a DNS resolution system that supports both iterative and recursive lookups.
 
+Run the script with the following command:
+
+```bash
+python3 dnsresolver.py <iterative|recursive> <domain>
+```
+
+Example:
+```bash
+python3 dnsresolver.py iterative example.com
+python3 dnsresolver.py recursive google.com
+```
+
 ## Key Features
 
 - **Iterative DNS Resolution:** Queries root servers, then TLD servers, and finally authoritative servers to resolve a domain name step by step, without relying on intermediate resolvers.
@@ -49,6 +61,11 @@ The implementation follows the correct DNS resolution procedures:
 ## Stress Testing
 
 Stress testing was conducted to evaluate the resolver’s performance under high query loads. Multiple DNS queries were executed in parallel using Python’s `ThreadPoolExecutor`, simulating concurrent client requests. The test included valid, invalid, and slow-responding domains to assess the resolver’s efficiency, response times, and robustness under varying conditions. The results helped identify performance bottlenecks and optimize timeout handling.
+
+Can be run by:
+```bash
+python dns_stress_test.py
+```
 
 ## Limitations
 
