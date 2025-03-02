@@ -6,7 +6,7 @@ This implements a DNS resolution system that supports both iterative and recursi
 
 - **Iterative DNS Resolution:** Queries root servers, then TLD servers, and finally authoritative servers to resolve a domain name step by step, without relying on intermediate resolvers.
 - **Recursive DNS Resolution:** Delegates the entire resolution process to a recursive resolver, which contacts multiple servers as needed and returns the final resolved IP address.
-- **Graceful Error Handling:** Handles errors like non-existent domains, timeouts, and no-answer responses.
+- **Error Handling:** Handles errors like non-existent domains, timeouts, and unreachable servers.
 - **Efficiency:** Uses a timeout mechanism and fallback methods to improve resolution.
 
 ## Important Functions and Definitions
@@ -73,7 +73,7 @@ Stress testing was conducted to evaluate the resolver’s performance under high
 ### Contribution
 
 I have completed the entire assignment on my own.
-[GithubLink](https://github.com/ayuraj09/CS425_DNS_Resolution_Itr_rec_lookup)
+[GithubLink](https://github.com/ayuraj09/CS425_DNS_Resolution_Iter_rec_lookup)
 
 ## Declaration  
 - The entire work, including server implementation and functionalities, was originally done by me.  
