@@ -1,6 +1,6 @@
 # DNS Resolver Assignment   
 
-    This implements a DNS resolution system that supports both iterative and recursive lookups.
+This implements a DNS resolution system that supports both iterative and recursive lookups.
 
 ## Key Features
 
